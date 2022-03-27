@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Survey form</title>
+    <style>
+      body {
+        background-image: url(unsplash.jpeg);
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+<header>
+<h1 id="title">1000 Women in Design Application</h1>
+</header>
+
+<form  action="survey.html" method="post" id="form">
+    <h1 id="signupbox">Sign Up</h1>
+    <div class="surveybox">
+        <legend class="lege">Personal Information:</legend>
+
+            <label for="firstname" class="label">First Name</br></label>
+                <input id="firstname" class="inputbox" type="text" name="First Name" required>
+            <br>
+            <label for="lastname" class="label">Last Name</br></label>
+                <input id="lastname" class="inputbox" type="text" name="Last Name" required>
+            <br>
+            <label for="email" class="label">Email</br></label>
+                <input id="email" class="inputbox" type="email" name="email" required>
+            <br>
+
+            <label for="age" class="label">Age<br>
+                <input id="age" class="inputbox" type="number" name="Age" max="60" min="10" required>
+            </label></br>
+
+            <label for="date" class="label" >Date of Birth</br></label>
+                 <input id="date" class="inputbox" type="date" name="date" required>
+            <br>
+
+            <select name="user_gender" class="inputbox" id="gender">
+                <option class="option" disabled selected value>Please select your gender</option>
+                <option class="option"  value="male">Male</option>
+                <option class="option"  value="female">Female</option>
+                <option class="option"  value="others">Others</option>
+            </select>
+
+        </div>
+
+       <div class="surveybox">
+    <legend class="lege">Contact Information:</legend>
+
+        <label for="phonenumber" class="label">Phone number</br></label>
+            <input id="phonenumber" class="inputbox" type="tel" name="Phone number" required>
+        <br>
+        <label for="state" class="label">State/city</br></label>
+            <input id="state" type="text" placeholder="State/city" class="inputbox" required>
+        <br>
+        <label for="country" class="label">Country</br>
+            <select name="Country" class="inputbox" id="country" required>
+                <option class="option" disabled selected value>Select an option</option>
+                <option class="option"  value="Afghanistan">Afghanistan</option>
+                <option class="option"  value="Algeria">Algeria</option>
+                <option class="option"  value="Angola">Angola</option>
+                <option class="option"  value="Ghana">Ghana</option>
+                <option class="option"  value="Nigeria">Nigeria</option>
+                <option class="option"  value="United Kingdom">United Kingdom</option>
+            </select></br>
+        </label>
+
+    </div>
+
+    <div class="surveybox">
+    <legend class="lege">Suggestions</legend>
+
+          <label class="label">Would you like to get a feedback?</label></br>
+                    <input id="would"  type="radio" name="user_feedback" checked >
+          <label class="label" for="would">Yes</label><br>
+                     <input id="won't"  type="radio" name="user_feedback" >
+          <label for="won't" class="label">No</label><br>
+                     <input id="maybe"  type="radio" name="user_feedback" >
+          <label for="maybe" class="label">Maybe</label><br>
+
+            <label>What are your interests?</label><br>
+        <textarea id="txtfield" type="text" class="inputbox" placeholder="Type your interests"required>
+        </textarea><br>
+
+  <button id="submit" type="submit"><span>Submit</span></button>
+</div>
+ </form>
+</div>
+</body>
+</html>
